@@ -5,7 +5,7 @@ namespace CodeFirst_MVC_App.Models
     public class ProductInfoDbContext : DbContext
     {
         public ProductInfoDbContext(DbContextOptions options):base(options) { }
-        DbSet<Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
         
     }
 }
